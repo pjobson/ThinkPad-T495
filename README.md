@@ -12,18 +12,19 @@
 * **Audio:** Realtek ALC257
 * **Ethernet:** Realtek RTL8111EPV
 * **Wireless:** Intel Wireless-AC 9260, 802.11ac Dual Band 2x2 Wi-Fi + Bluetooth 5.1, M.2 card
-* **WWAN/Mobile:** M.2 B+M-Key 
+* **WWAN/Mobile:** M.2 B+M-Key
+    * Can be replaced with a B+M Key SSD, such as: Western Digital p/n SDAPTUW-128G
 
 ## Hardware Info
 
-* **[aplay.txt](https://raw.githubusercontent.com/pjobson/ThinkPad-T495/main/txt/aplay.txt)** - ALSA List of Devices & PCMs
-* **[dmidecode.txt](https://gist.githubusercontent.com/pjobson/76e4f171ba446a18835f4c963959236e/raw/fa4b94585d5a1c4c8b275f5779e0c49addbf8ad6/dmidecode.txt)** - Decoded SMBIOS Hardware Table Info
-* **[inxi.txt](https://gist.githubusercontent.com/pjobson/76e4f171ba446a18835f4c963959236e/raw/fa4b94585d5a1c4c8b275f5779e0c49addbf8ad6/inxi.txt)** - Technical Hardware Data
-* **[lscpu.txt](https://gist.githubusercontent.com/pjobson/76e4f171ba446a18835f4c963959236e/raw/60db393c2d33390307109f4c010d331cd3fc80e4/lscpu.txt)** - Information about CPU Architecture
-* **lshw.txt** - Lists hardware information
-* **lspci.txt** - Lists PCI devices
-* **lsusb.txt** - Lists USB devices
-* **pactl.txt** - Information on Pulse Audio Devices
+* **[aplay](data/aplay.md)** - ALSA List of Devices & PCMs
+* **[dmidecode](data/dmidecode.md)** - Decoded SMBIOS Hardware Table Info
+* **[inxi](data/inxi.md)** - Technical Hardware Data
+* **[lscpu](data/lscpu.md)** - Information about CPU Architecture
+* **[lshw](data/lshw.md)** - Lists hardware information
+* **[lspci](data/lspci.md)** - Lists PCI devices
+* **[lsusb](data/lsusb.md)** - Lists USB devices
+* **[pactl](data/pactl.md)** - Information on Pulse Audio Devices
 
 ## Docking Stations
 
@@ -54,7 +55,13 @@
     * 1x DC-IN
     * 1x Kensington Lock Slot
 
-## References:
+## Manuals
+
+* [User's Guide v2 (english)](pdf/T495.UsersGuide_v2.en.pdf)
+* [Product Specification Reference (english)](pdf/T495.ProductSpecificationReference.en.pdf)
+* [Hardware Maintenance Manual (english)](pdf/T495.HardwareMaintenanceManual.en.pdf)
+
+## References
 
 * [Lenovo T495](https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadt/t495/22tp2ttt495)
 * [Lenovo Support](https://pcsupport.lenovo.com/us/en/products/laptops-and-netbooks/thinkpad-t-series-laptops/thinkpad-t495-type-20nj-20nk)
