@@ -6,6 +6,7 @@
 * **Graphics:** [AMD Radeon Vega 8 Mobile Gfx](https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Vega+8+Mobile&id=3845)
 * **Monitor Support:** Supports up to 4 independent displays via native display and 3 external monitors; supports external monitors via HDMI? (up to 4096x2160@60Hz) or USB-C (up to 4096x2304@60Hz)
 * **Memory:** One memory soldered to systemboard, one DDR4 SO-DIMM slot, dual-channel capable. 8GB soldered, up to 40GB 8GB + 32GB module.
+    * Known good memory: Samsung p/n M471A4G43MB1-CTD
 * **Storage Support:** M.2 2280 NVME
 * **Card Reader:** MicroSD
 * **Audio:** Realtek ALC257
@@ -15,7 +16,7 @@
 
 ## Hardware Info
 
-* **[aplay.txt](https://gist.githubusercontent.com/pjobson/76e4f171ba446a18835f4c963959236e/raw/fa4b94585d5a1c4c8b275f5779e0c49addbf8ad6/aplay.txt)** - ALSA List of Devices & PCMs
+* **[aplay.txt](https://raw.githubusercontent.com/pjobson/ThinkPad-T495/main/txt/aplay.txt)** - ALSA List of Devices & PCMs
 * **[dmidecode.txt](https://gist.githubusercontent.com/pjobson/76e4f171ba446a18835f4c963959236e/raw/fa4b94585d5a1c4c8b275f5779e0c49addbf8ad6/dmidecode.txt)** - Decoded SMBIOS Hardware Table Info
 * **[inxi.txt](https://gist.githubusercontent.com/pjobson/76e4f171ba446a18835f4c963959236e/raw/fa4b94585d5a1c4c8b275f5779e0c49addbf8ad6/inxi.txt)** - Technical Hardware Data
 * **[lscpu.txt](https://gist.githubusercontent.com/pjobson/76e4f171ba446a18835f4c963959236e/raw/60db393c2d33390307109f4c010d331cd3fc80e4/lscpu.txt)** - Information about CPU Architecture
