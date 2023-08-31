@@ -1,0 +1,87 @@
+System:
+  Kernel: 5.15.0-78-generic x86_64 bits: 64 compiler: gcc v: 11.3.0
+    Desktop: Cinnamon 5.8.4 Distro: Linux Mint 21.2 Victoria
+    base: Ubuntu 22.04 jammy
+Machine:
+  Type: Laptop System: LENOVO product: 20NKS0WA03 v: ThinkPad T495
+    serial: <superuser required>
+  Mobo: LENOVO model: 20NKS0WA03 v: SDK0J40697 WIN
+    serial: <superuser required> UEFI: LENOVO v: R12ET62W(1.32 )
+    date: 01/11/2023
+Battery:
+  ID-1: BAT0 charge: 46.3 Wh (99.1%) condition: 46.7/50.5 Wh (92.6%)
+    volts: 12.8 min: 11.5 model: SMP 02DL008 status: Not charging
+CPU:
+  Info: quad core model: AMD Ryzen 5 PRO 3500U w/ Radeon Vega Mobile Gfx
+    bits: 64 type: MT MCP arch: Zen/Zen+ note: check rev: 1 cache: L1: 384 KiB
+    L2: 2 MiB L3: 4 MiB
+  Speed (MHz): avg: 1983 high: 2807 min/max: 1400/2100 boost: enabled
+    cores: 1: 2807 2: 2767 3: 1420 4: 1230 5: 1631 6: 1381 7: 2464 8: 2171
+    bogomips: 33537
+  Flags: avx avx2 ht lm nx pae sse sse2 sse3 sse4_1 sse4_2 sse4a ssse3 svm
+Graphics:
+  Device-1: AMD Picasso/Raven 2 [Radeon Vega Series / Radeon Mobile Series]
+    vendor: Lenovo driver: amdgpu v: kernel bus-ID: 06:00.0
+  Device-2: Chicony Integrated Camera (1280x720@30) type: USB
+    driver: uvcvideo bus-ID: 4-2.1:4
+  Display: x11 server: X.Org v: 1.21.1.4 driver: X: loaded: amdgpu,ati
+    unloaded: fbdev,modesetting,vesa gpu: amdgpu resolution: 1920x1080~60Hz
+  OpenGL: renderer: AMD Radeon Vega 8 Graphics (raven LLVM 15.0.7 DRM 3.42
+  5.15.0-78-generic)
+    v: 4.6 Mesa 22.2.5-0ubuntu0.1~22.04.3 direct render: Yes
+Audio:
+  Device-1: AMD Raven/Raven2/Fenghuang HDMI/DP Audio vendor: Lenovo
+    driver: snd_hda_intel v: kernel bus-ID: 06:00.1
+  Device-2: AMD Raven/Raven2/FireFlight/Renoir Audio Processor
+    vendor: Lenovo driver: snd_pci_acp3x v: kernel bus-ID: 06:00.5
+  Device-3: AMD Family 17h HD Audio vendor: Lenovo driver: snd_hda_intel
+    v: kernel bus-ID: 06:00.6
+  Sound Server-1: ALSA v: k5.15.0-78-generic running: yes
+  Sound Server-2: PulseAudio v: 15.99.1 running: yes
+  Sound Server-3: PipeWire v: 0.3.48 running: yes
+Network:
+  Device-1: Intel Wireless-AC 9260 driver: iwlwifi v: kernel bus-ID: 01:00.0
+  IF: wlp1s0 state: up mac: <filter>
+  Device-2: Realtek RTL8111/8168/8411 PCI Express Gigabit Ethernet
+    vendor: Lenovo driver: r8169 v: kernel port: 3400 bus-ID: 03:00.0
+  IF: enp3s0f0 state: down mac: <filter>
+  Device-3: Realtek RTL8111/8168/8411 PCI Express Gigabit Ethernet
+    vendor: Lenovo driver: r8169 v: kernel port: 2000 bus-ID: 04:00.0
+  IF: enp4s0 state: down mac: <filter>
+Bluetooth:
+  Device-1: Intel Wireless-AC 9260 Bluetooth Adapter type: USB driver: btusb
+    v: 0.8 bus-ID: 4-1:2
+  Report: hciconfig ID: hci0 rfk-id: 3 state: up address: <filter>
+    bt-v: 3.0 lmp-v: 5.1
+RAID:
+  Device-1: bpool type: zfs status: ONLINE level: linear raw: size: 1.88 GiB
+    free: 1.61 GiB zfs-fs: size: 1.75 GiB free: 1.49 GiB
+  Components: Online: N/A
+  Device-2: rpool type: zfs status: ONLINE level: linear raw: size: 232 GiB
+    free: 217 GiB zfs-fs: size: 224.81 GiB free: 209.6 GiB
+  Components: Online: N/A
+Drives:
+  Local Storage: total: raw: 245.69 GiB usable: 472.25 GiB
+    used: 17.35 GiB (3.7%)
+  ID-1: /dev/mmcblk0 vendor: Toshiba model: SA08G size: 7.21 GiB
+  ID-2: /dev/nvme0n1 vendor: Intel model: SSDPEKKF256G8L size: 238.47 GiB
+    temp: 34.9 C
+Partition:
+  ID-1: / size: 216.48 GiB used: 6.88 GiB (3.2%) fs: zfs
+    logical: rpool/ROOT/ubuntu_3z5a91
+  ID-2: /boot size: 1.75 GiB used: 266 MiB (14.8%) fs: zfs
+    logical: bpool/BOOT/ubuntu_3z5a91
+  ID-3: /boot/efi size: 511 MiB used: 14.3 MiB (2.8%) fs: vfat
+    dev: /dev/nvme0n1p1
+  ID-4: /var/log size: 209.61 GiB used: 6.5 MiB (0.0%) fs: zfs
+    logical: rpool/ROOT/ubuntu_3z5a91/var/log
+Swap:
+  ID-1: swap-1 type: partition size: 2 GiB used: 1.92 GiB (95.9%)
+    dev: /dev/nvme0n1p2
+Sensors:
+  System Temperatures: cpu: 57.0 C mobo: N/A gpu: amdgpu temp: 56.0 C
+  Fan Speeds (RPM): fan-1: 2700
+Info:
+  Processes: 490 Uptime: 3d 22h 23m Memory: 13.56 GiB used: 12.45 GiB (91.8%)
+  Init: systemd runlevel: 5 Compilers: gcc: 11.3.0 Packages: 2572 Shell: Bash
+  v: 5.1.16 inxi: 3.3.13
