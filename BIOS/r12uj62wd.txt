@@ -1,0 +1,490 @@
+                                                                   Revision : 01
+--------------------------------------------------------------------------------
+Software name      BIOS Update CD
+                   (ISO image file for bootable CD)
+
+Support model      ThinkPad T495
+
+Operating Systems  Microsoft Windows 10  64-bit 
+		   Microsoft Windows 11
+                   
+                   Refer to marketing materials to find out what computer models
+                   support which Operating Systems.
+
+Version            1.32(UEFI BIOS)
+                   1.32(ECP)
+
+--------------------------------------------------------------------------------
+WHAT THIS PACKAGE DOES
+
+  This package provides the ISO image file of UEFI BIOS which is compatible with
+  CD/DVD/BD writing software to create the CD/DVD/BD for the UEFI BIOS update.
+  Hereafter the CD/DVD/BD for the UEFI BIOS update is called as "BIOS Update CD".
+
+  The BIOS Update CD can boot the computer disregarding the operating systems
+  and update the UEFI BIOS (including system program and Embedded Controller
+  program) stored in the Lenovo computer to fix problems, add new functions,
+  or expand functions as noted below.
+
+  For that purpose, it is necessary to have the CD/DVD/BD writing software (with
+  CD/DVD/BD creation function from the ISO image file) prepared separately.
+
+  Also, any one of the following types of CD-RW, CD-RW & DVD Combo, DVD, DVD
+  Multi, BD or other optical drives should be prepared. (Hereafter these drives
+  are called as "optical drive".)
+  - USB
+
+  This program is language independent and can be used with any language system.
+
+--------------------------------------------------------------------------------
+CHANGES IN THIS RELEASE
+ Version 1.32(UEFI BIOS)
+         1.32(ECP)
+ 
+[Important updates]
+- None.
+
+[New functions or enhancements]
+- None.
+
+[Problem fixes]
+- Fixed bitlocker recovery popup issue.
+
+--------------------------------------------------------------------------------
+DETERMINING WHICH VERSION IS INSTALLED
+
+  There are two ways to check the UEFI BIOS version and BIOS ID.
+
+ [Checking on Windows]
+
+  Windows 10:
+
+  1. Hold down the Windows logo key and press X to open a menu at the lower-left
+     area of the screen.
+
+  2. Select Control Panel from the menu.
+  3. Make sure "View by Category" is selected, and select System and Security,
+     select Administrative Tools, and then select System Information.
+     - or -
+  2. Select Run from the menu.
+  3. Type msinfo32, and press Enter.
+
+  4. On the System Information window, make sure System Summary is selected in
+     the left side of the window.
+  5. Locate the BIOS version/date line in the right side of the window.
+     "LENOVO BIOS ID (BIOS version), date" will be shown.
+
+  If you are prompted for an administrator password or confirmation, type your
+  password, or click Continue.  
+
+
+  Windows 11:
+
+  1. Press Windows logo key.
+
+  2. Search "Control Panel" in Search Area and open Control Panel from the menu.
+  3. Make sure "View by Category" is selected, and select System and Security,
+     select Windows Tools, and then select System Information.
+     - or -
+  2. Search "Run" in Search Area and open Run from the menu.
+  3. Type msinfo32, then press Enter.
+
+  4. On the System Information window, make sure System Summary is selected in
+     the left side of the window.
+  5. Locate the BIOS Version/Date line in the right side of the window.
+     "LENOVO BIOS ID (BIOS version), date" will be shown.
+
+  If you are prompted for an administrator password or confirmation, type your
+  password, or click Continue.  
+
+ [Checking on ThinkPad Setup]
+
+  1. Turn off the computer.
+  2. Turn on the computer.
+  3. While the "To interrupt normal startup, press Enter" message is displayed
+     at the lower-left area of the screen, press the F1 key. The ThinkPad Setup
+     menu will be displayed. If a password prompt appears, type the correct
+     password.
+  4. Locate the UEFI BIOS Version line and Embedded Controller Version line.
+     "UEFI BIOS version (BIOS ID)" will be shown on the UEFI BIOS Version line.
+ 
+--------------------------------------------------------------------------------
+NOTES
+
+- Be aware that the OS Optimized Defaults option in the Restart menu of ThinkPad
+  Setup should not be normally changed. Lenovo recommends to use the factory
+  default setting for it, as follows.
+
+                                                       OS Optimized Defaults
+  - For Windows 10 64-bit Preload models                      [Enabled]
+
+  To install the retail edition of Windows 10 64-bit/Windows 11, the OS Optimized Defaults
+  option should be [Enabled].
+
+  If the OS Optimized Defaults setting is changed, Setup Default by the F9 key
+  will not load the same default configuration, as follows. Furthermore, by the
+  condition of Operating System installation, the computer may not be booted due
+  to the setting change.
+
+  If your computer runs satisfactorily now, you have no need to change the OS
+  Optimized Defaults option. If you need to change the setting, consider well
+  the effect of the setting change.
+
+  Affected Setup menu items :
+  "OS Optimized Defaults" setting          [Disabled] case      [Enabled] case
+  - Security
+    - UEFI BIOS Update Option
+      - Secure RollBack Prevention         [Disabled]           [Enabled]
+    - Secure Boot
+      - Secure Boot                        [Disabled]           [Enabled]
+  - Startup
+    - UEFI/Legacy Boot                     [Both]               [UEFI Only]
+    - UEFI/Legacy Boot Priority            [UEFI First]         (Not shown)
+    - CSM Support                          [Yes]                [No]
+
+  By the OS to be newly installed, you need to change the OS Optimized Defaults
+  option, and load default configuration.
+
+  1. Enter the ThinkPad Setup menu by following steps in [Checking On ThinkPad
+     Setup] in the DETERMINING WHICH VERSION IS INSTALLED section.
+  2. Select Restart, then select OS Optimized Defaults and press Enter.
+  3. Select the following setting and press Enter.
+       [Enabled]   (for Windows 10 64-bit)
+  4. Press the F9 key to load default configuration.
+  5. Select Yes.
+  6. Press the F10 key to save default configuration and exit.
+  7. Select Yes.
+     The computer will be restarted automatically.
+
+  (Caution)
+  If both the Secure Boot option is Enabled and UEFI Secure Boot in the Main
+  menu of ThinkPad Setup is shown as Off, restoring Factory Keys is needed. Do
+  the following to restore Factory Keys.
+
+  1. Enter the ThinkPad Setup menu by following steps in [Checking On ThinkPad
+     Setup] in the DETERMINING WHICH VERSION IS INSTALLED section.
+  2. Select Security, then select Secure Boot.
+  3. Select Restore Factory Keys, and press Enter.
+  4. Select Yes to restore Factory keys.
+  5. Press the F10 key to save configuration and exit.
+  6. Select Yes.
+     The computer will be restarted automatically.
+
+- You should install the CD/DVD/BD writing software which supports CD/DVD/BD
+  creation function from the ISO image file to create the BIOS Update CD.
+
+- To boot the computer from the BIOS Update CD, you should have any one of the
+  following types of optical drives.
+  - ThinkPad internal
+  - USB
+  Any types of other optical device like ExpressCard device are not supported.
+  
+- The contents of the BIOS Update CD can not be shown by Windows Explorer.
+
+--------------------------------------------------------------------------------
+CREATING THE BIOS UPDATE CD
+
+  This section assumes to use Internet Explorer and Windows Explorer.
+
+  Downloading file
+  1. Click once on the underlined file name. Once this is done, some pop-up
+     windows will appear.
+  2. Follow the instructions on the screen.
+  3. In the window to choose Run or Save, click Save.
+  4. Choose the folder you would like to download the file to and click Save.
+     A different window will appear and the download will begin and complete.
+     Once the download has completed, there may or may not be a message stating
+     that the download completed successfully.
+
+  Creating BIOS Update CD
+  5. Prepare a computer with an optical drive installed and a blank CD/DVD/BD
+     disc, and make sure the CD/DVD/BD writing software is installed into the
+     computer.
+  6. Locate the folder where the file was downloaded.
+  7. Locate the file ending in ".ISO" that was downloaded, then double-click it.
+     A writing software will open.
+  8. Follow the instructions on the screen to finish writing and complete
+     creating BIOS Update CD.
+
+  Finally delete the file saved in the step 4.
+
+--------------------------------------------------------------------------------
+PREPARING THE BOOT DEVICE
+
+  Confirm that the BIOS CD is set up as bootable and an optical drive is in the
+  boot device list of your Lenovo Setup.
+
+  Windows 10/Windows 11:
+  1. Turn on the computer to start Windows.
+  2. Press Windows logo key to open Start Menu.
+  3. Select Power from the menu.
+  4. Select Reboot to restart the computer.
+
+--------------------------------------------------------------------------------
+UPDATING THE UEFI BIOS
+
+Notes:
+- If your computer runs satisfactorily now, it may not be necessary to update
+  the UEFI BIOS. To determine if you should update the UEFI BIOS, refer to the
+  Version Information section.
+- You need an AC adapter, a charged battery pack and any one of the following
+  types of optical drives.
+  - USB
+- Remove the Power-on password prior to updating the UEFI BIOS in the remote
+  deployment environments.
+
+Attention:
+  Do not turn off, suspend the computer or remove the BIOS UPDATE CD until
+  the update has been completed. IF YOU DO THAT WHILE THE UPDATE IS STILL
+  IN PROGRESS, THE SYSTEM BOARD MAY HAVE TO BE REPLACED.
+
+
+  1. Firmly connect the AC adapter to your ThinkPad computer.
+  2. Make sure it has an optical drive installed.
+
+  Windows 10/Windows 11:
+  1. Turn on the computer to start Windows.
+  2. Press Windows logo key to open Start Menu.
+  3. Select Power from the menu.
+  4. Select Reboot to restart the computer.
+
+--------------------------------------------------------------------------------
+INITIALIZING UEFI BIOS
+
+  UEFI BIOS Initialization is suggested for some problems. To initialize the
+  UEFI BIOS settings:
+  1. Power off the computer.
+  2. Power on the computer.
+  3. While the "To interrupt normal startup, press Enter" message is displayed
+     at the lower-left area of the screen, press the F1 key. The ThinkPad Setup
+     menu will be displayed. If a password prompt appears, type the correct
+     password.
+  4. Press the F9 key (or hold down the Fn key and press the F9 key) to load
+     default configuration.
+  5. Select Yes.
+  6. Press the F10 key (or hold down the Fn key and press the F10 key) to save
+     default configuration and exit.
+  7. Select Yes.
+  8. Restart the computer.
+
+  Note:
+  After initialization you may need to reapply some settings that you had
+  changed previously.
+
+--------------------------------------------------------------------------------
+VERSION INFORMATION
+
+  The following versions of UEFI BIOS and ECP (Embedded Controller Program) have
+  been released to date.
+
+  Package (ID)	       UEFI BIOS (BIOS ID)	ECP (ECP ID)            Rev.   Issue Date
+  ----------------     --------------------  	----------------    	----   ----------
+  R12UJ62W             1.32   (R12ET62W)        1.32  (R12HT62W)        01     2023/02/17
+  1.31   (R12UJ61W)    1.31   (R12ET61W)        1.31  (R12HT61W)        01     2022/09/01
+  1.28   (R12UJ58W)    1.28   (R12ET58W)        1.28  (R12HT58W)        01     2021/08/13
+  1.27   (R12UJ57W)    1.27   (R12ET57W)        1.27  (R12HT57W)        01     2021/01/19
+  1.25   (R12UJ55W)    1.25   (R12ET55W)        1.25  (R12HT55W)        01     2020/07/16
+  1.22   (R12UJ52W)    1.22   (R12ET52W)        1.22  (R12HT52W)        01     2020/05/28
+  1.21   (R12UJ51W)    1.21   (R12ET51W)        1.21  (R12HT51W)        01     2020/05/06
+  1.20   (R12UJ50W)    1.20   (R12ET50W)        1.20  (R12HT50W)        01     2020/03/18
+  1.19   (R12UJ49W)    1.19   (R12ET49W)        1.19  (R12HT49W)        02     2020/03/04
+  1.19   (R12UJ49W)    1.19   (R12ET49W)        1.19  (R12HT49W)        01     2020/02/11 
+  1.17   (R12UJ47W)    1.17   (R12ET47W)        1.17  (R12HT47W)        01     2020/01/06  
+  1.16   (R12UJ46W)    1.16   (R12ET46W)        1.16  (R12HT46W)        01     2019/11/25  
+  1.15   (R12UJ45W)    1.15   (R12ET45W)        1.15  (R12HT45W)        01     2019/11/01
+  1.14   (R12UJ44W)    1.14   (R12ET44W)        1.14  (R12HT44W)        01     2019/10/10
+  1.13   (R12UJ43W)    1.13   (R12ET43W)        1.13  (R12HT43W)        01     2019/09/06
+  1.12   (R12UJ42W)    1.12   (R12ET42W)        1.12  (R12HT42W)        01     2019/08/23  
+  1.11   (R12UJ41W)    1.11   (R12ET41W)        1.11  (R12HT41W)        01     2019/08/12  
+  1.05   (R12UJ35W)    1.05   (R12ET35W)        1.05  (R12HT35W)    	01     2019/05/16  
+  1.04   (R12UJ34W)    1.04   (R12ET34W)        1.04  (R12HT34W)    	01     2019/05/08    
+
+  Note: Revision number (Rev.) is for administrative purpose of this README
+        document and is not related to software version. There is no need to
+        upgrade this software when the revision number changes.
+
+  To check the version of UEFI BIOS and Embedded Controller Program, refer to
+  the Determining which version is installed section.
+
+Summary of Changes
+
+  Where: <   >        Package version
+         UEFI:        UEFI BIOS version
+         ECP:         Embedded Controller Program version
+         [Important]  Important update
+         (New)        New function or enhancement
+         (Fix)        Correction to existing function
+
+<R12UJ62W>
+UEFI: 1.32 / ECP: 1.32
+- (Fix) Fixed bitlocker recovery popup issue.
+
+<1.31>
+- [Important] Security issue fix: Security ID 004-027, LEN-66615.
+- [Important] Security issue fix: Security ID 007-015, LEN-66614.
+- (Fix) Fixed issue: Secure Boot PK setting by UEFI Shell causes reboot.
+
+<1.28>
+- [Important] Update Phoenix Security Issue.
+- [Important] Sync system base board version to SMBIOS type2.
+- [Important] Update CopyRight to 2021.
+- (Fix) Fixed an issue that BTS SPI protection fail.
+
+<1.27>
+- [Important] Remove UMA buffer size item  128MB/256MB/512MB on BIOS setup.
+- [Important] Remove no BIOS setup item into WMI list. 
+- [Important] Modify Strange diagnostics error.
+- [New] Added Support SMBios release to support country code.
+- [New] Added back flash prevention for Type11 Country code.
+- [New] Added support for Nuvoton TPM firmware update function.	 
+- [New] Added (LEN-27581) Security:changed SmmOEMInt15 to return an error after ExitBootServices.Removed USB-API function.
+- (Fix) Fixed an issue that Fn+Tab have no function.
+- (Fix) Fixed an issue that it can't be waked by WOL in S4/S5 from TBT TR dock(TBT work station).
+- (Fix) Fixed an issue that battery icon in System task tray shows yellow mark when plug out 65W/90W AC adapter then plug in 135W AC adapter.
+		 
+<1.25>
+- [new] Added Ec Reset Detection item for treat EC reset as tamper event.
+- [new] Added Hole Sensot to disable and enable to eliminate unexpected entering sleep state.
+- [new] Added EDID table for new LGD FHD panel panel LP140WFH-SPD1.
+- [new] Added support TCO logo.
+- [Important] Modify UMA buffer size item default not to correct when flash BIOS with no CVAR command.
+- [Important] Modify some WMI item name.
+- (Fix) Fixed an issue battery reset show Failed in Lenovo Vantage. 
+- (Fix) Fixed an issue the charge LED will always on even deattach AC adapter when battery capacity is 0%.
+
+<1.22>
+- [Important] Support G sensor BMA280.
+- (Fix) Fixed an issue that system can WOL from hybrid shutdown when BIOS set AC Only in AC mode 
+- (Fix) Fixed an issue that  the POST Hang up by update PMP driver
+
+<1.21>
+- [new] Added UMA buffer size item into WMI list.
+- (Fix) Fixed an issue that the value of the Fast Startup BIOS Post time to long after running JSP test.
+- (Fix) Fixed an issue that external 4K 60Hz monitor not display lenovo logo when CSM enable.
+- (Fix) Fixed an issue that G-sensor tool test fail.
+- (Fix) Fixed an issue that tamper detect issue when push hole reset.
+- (Fix) Fixed an issue that cpu frequency downgrade when unplugging AC.
+	 
+<1.20>
+- [Important] Security fix addresses LEN-29406 ST Microelectronics TPM Firmware ECDSA
+              Signature Generation Vulnerability. 
+              Refer to Lenovo's Security Advisory page for additionalinformation.
+              (https://support.lenovo.com/us/en/solutions/LEN-29406)
+- [new] Added Lenovo customized Ethernet IC implementation.
+ 
+<1.19>
+- [Important]Update Copyright to 2020.
+- [Important] Addresses CVE-2019-6173 and CVE-2019-6196.
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-6173)
+              (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-6196)
+              Refer to Lenovo's Security Advisory page for additional information about
+              LEN-27431 "DLL Search Path and Symbolic Link Vulnerabilities".
+              (https://support.lenovo.com/us/en/product_security/LEN-27431)
+              (Note) Vulnerabilities exploitable only during installation.
+              Previously installed version is not vulnerable to these CVEs.
+- [new] Added Charging LED which should always be ON while AC adapter is connected. 
+- [new] Added System always show "Configuration changed - Restart the system." then reboot on POST. 
+- (Fix) Fixed an error that flash BIOS show error when use mmkusbkey.bat copy winflash file to USB key.
+- (Fix) Fixed an error that using the Battery & System PM status check tool.
+
+<1.17>
+- [Important] Update Diagnostics to 4.11.
+- [new] Added Support for Battery Diagnostics.
+- [new] Added AC only for S3 for Wake on LAN item.
+
+<1.16>
+- [Important] Added features to Thinkpad WMI (for Linux).
+- [Important] Update LGD FHD LCFW Touch FW LP140WFB-SPK4 panel EDID.
+
+<1.15>
+- [Important] Update E-label to v2.09.2.47.
+- [Important] Hide USB UEFI BIOS support item in BIOS setup. 
+- [Important] Improve keyboard function.
+- [Important] Remove FN+Q function.
+- [Important] Enable Lock EC function.
+- (Fixed) Fixed WWAN show error code 1802.
+
+<1.14>
+- (Fix) Fixed an issue that system will hang up when attached USB dock w/o network plugged to the EUT under legacy mode with USB UEFI BIOS support to disable.
+- (Fix) Fixed an issue that The result of Fast Startup BIOS Post (Lenovo) is failed which over Lenovo criteria when run JPS test.
+- (Fix) Fixed an issue that The Fn Key Hidden Functions not support on lenovo vantage screen.
+- (Fix) Fixed an issue that Windows cannot be moved from one monitor to another after pressing combination key left shift key + Win logo key + right arrow key.
+- (Fix) Enhancement to address security vulnerability Security ID 100-001 &  004-012.
+- [New] Added UMA Frame buffer Size item in BIOS setup.
+- [important] Fixed WinPE low-res screen issue.
+
+<1.13>
+- [Important] Update Elabel to v2.08.2.40.
+- [Important] Update fingerprint version to 6_0_23_1105.
+- [Important] Change keyboard sense scan sequence.
+- (Fix) Fixed an issue that PC can't WOL from S4 in AC mode when S4 in DC mode plug in AC adapter.
+- (Fix) Fixed an issue that TSC synchronization issue under linux.
+- (Fix) Fixed an issue that Event generation show 寰筍 boot failure铓ter start Alert Indication on Realtek Management Console tool.
+
+<1.12>
+- (New) Added support for removing Absolute BIOS Module From all Systems Shipping to PRC.
+- (New) Added lenovo mini dock support.
+- (Fix) Fixed an issue that the display cannot be turn off if press sleep button(Fn+4).
+
+<1.11>
+- (Fix) Fixed an issue that LIPC into ship mode fail.
+ 
+<1.05>
+- [Important] Fixed an issue that the UCSI show yellow bang under OS RS4 with fail rate 100%.
+- [Important] Follow SPEC, modify AGPIO86(EC_SMI) from Native to input.
+- [Important] Update elabel app to V2.08.2.21.
+- [Important] Update winuptp for error shown after check password.
+- (Fix) Fixed an issue that EUT show secure Flash Authentication Failed, Capsule data is invalid" during BIOS V31 WinFlash longrun test.
+- (Fix) Fixed an issue that USB device can't disappear from Boot Control page after remove USB disk from EUT.
+
+<1.04>
+- [Important] Added Samsung 32Gb memory support.
+- (New) Initial version of ThinkPad T495
+
+--------------------------------------------------------------------------------
+UEFI BIOS INFORMATION
+
+Memory Map Information
+----------------------
+Reserved Area:
+The following conventional memory addresses are reserved by the UEFI BIOS and
+others.
+
+  C0000-CFFFF : Reserved for Video BIOS
+  D0000-D0FFF : Reserved for Option ROM of Ethernet (*a)
+  E0000-FFFFF : Reserved for System BIOS
+
+  *a: This area will be released in case of Ethernet LAN Option ROM was NOT used
+      at system boot.
+
+
+Usable Area:
+The following memory address can be used by the memory manager such as EMM386.
+
+  D0000-DFFFF or D1000-DFFFF (*b)
+
+  *b: Memory address will be changed to D1000-DFFFF when Ethernet LAN Option ROM
+      was used at system boot.
+
+  Note:
+  Certain addresses in this area will be reserved for optional devices by
+  Operating Systems. The addresses vary and depend on the design of each
+  Operating System.
+
+--------------------------------------------------------------------------------
+LIMITATIONS
+
+  Nothing.
+
+--------------------------------------------------------------------------------
+TRADEMARKS
+
+* Lenovo are registered trademarks of Lenovo.
+* Rescue and Recovery is a trademark of Lenovo.
+
+* Intel is a registered trademark of Intel Corporation.
+* Microsoft, BitLocker, Windows are registered trademarks of
+  Microsoft Corporation.
+
+Other company, product, and service names may be registered trademarks,
+trademarks or service marks of others.

@@ -66,6 +66,15 @@
 * [Enable Fingerprint Reader Ubuntu Variants](https://gist.github.com/pjobson/705d3c24a7712dede6860337791068dd)
 * [AMDGPU Firmware Linux](https://gist.github.com/pjobson/90380853d37fb28345d38592c1f7a5eb)
 
+## BIOS Updates
+
+* 1.32 - BIOS Update Utility (Windows 10/11 64 bit) - [r12uj62w.exe](BIOS/r12uj62w.exe)
+* 1.32 - ReadMe for BIOS Update Utility (Windows 10/11 64 bit) - [r12uj62w.txt](BIOS/r12uj62w.txt)
+* 1.32 - BIOS Update (Bootable CD) - [r12uj62wd.iso](BIOS/r12uj62wd.iso)
+* 1.32 - ReadMe for BIOS Update (Bootable CD) - [r12uj62wd.txt](BIOS/r12uj62wd.txt)
+* 1.32 - BIOS Update Utility (Debian/RHEL/SUSE/Ubuntu) - [r12ul62w.zip](BIOS/r12ul62w.zip)
+* 1.32 - README (Debian/RHEL/SUSE/Ubuntu) - [r12ul62w.txt](BIOS/r12ul62w.txt)
+
 ## References
 
 * [Lenovo T495](https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadt/t495/22tp2ttt495)

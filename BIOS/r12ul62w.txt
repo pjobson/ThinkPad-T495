@@ -1,0 +1,228 @@
+                                                                   Revision : 01
+--------------------------------------------------------------------------------
+Software name      BIOS Update Utility
+
+Support model      ThinkPad T495
+
+
+Operating Systems  Ubuntu 16.04.4LTS
+                   Debian 9.3.0
+                   Red Hat Linux Enterprise 7.5
+                   Suse Linux Enterprise 12 SP3
+
+Version            1.32(UEFI BIOS)
+                   1.32(ECP)
+
+--------------------------------------------------------------------------------
+WHAT THIS PACKAGE DOES
+
+  This package updates the UEFI BIOS (including system program) stored in
+  the ThinkPad computer to fix problems, add new functions, or expand functions
+  as noted below.
+
+  Linux capsule update is supported on the UEFI BIOS version 1.31 or higher.
+
+
+--------------------------------------------------------------------------------
+CHANGES IN THIS RELEASE
+ Version 1.32(UEFI BIOS)
+         1.32(ECP)
+ 
+[Important updates]
+- Regular update.
+
+[New functions or enhancements]
+- None.
+
+[Problem fixes]
+- None.
+
+--------------------------------------------------------------------------------
+DETERMINING WHICH VERSION IS INSTALLED
+
+
+ [Checking on ThinkPad Setup]
+
+  1. Turn on the computer.
+  2. While the "To interrupt normal startup, press Enter" message is displayed
+     at the lower-left area or lower-center of the screen, press the F1 key.
+     The ThinkPad Setup menu will be displayed. If a password prompt appears,
+     type the correct password.
+  3. Locate the UEFI BIOS Version line.
+     "UEFI BIOS version (BIOS ID)" will be shown on the UEFI BIOS Version line.
+  4. Turn off the computer.
+
+
+--------------------------------------------------------------------------------
+UPDATING THE UEFI BIOS
+
+Note for Ubuntu 16.04.4 LTS:
+  See "Manual Update Using fwupdmgr" section for instruction.
+
+IMPORTANT NOTE for Debian 9.3.0:
+  Debian 9.3.0 does not include fwupd package which is required to update
+  firmware by default.
+  Please check with your distribution vendor contact how to install
+  fwupd package. After you installed fwupd package,
+  see "Manual Update Using fwupdmgr" section for instruction.
+
+IMPORTANT NOTE for Red Hat Linux Enterprise 7.5:
+  Red Hat Linux Enterprise 7.5 does not include fwupd package
+  which is required to update firmware by default.
+  Please check with your distribution vendor contact how to install
+  fwupd package. After you installed fwupd package,
+  see "Manual Update Using fwupdmgr" section for instruction.
+
+IMPORTANT NOTE for Suse Linux Enterprise 12 SP3:
+  No fwupd package is available for Suse Linux Enterprise 12 SP3.
+  You need to use "fwupdate" command instead, a lower-layer frontend,
+  which is not included by default.
+  Please check with your distribution vendor contact how to install
+  fwupdate package. See "Manual Update Using fwupdate" section.
+
+
+Notes:
+- If your computer runs satisfactorily now, it may not be necessary to update
+  the UEFI BIOS. To determine if you should update the UEFI BIOS, refer to the
+  Version Information section.
+- You need an AC adapter and a charged battery pack.
+- Remove the Power-on password prior to updating the UEFI BIOS in the remote
+  deployment environments.
+
+
+Attention:
+  Do not turn off or suspend the computer until the update has been completed.
+  IF YOU DO THAT WHILE THE UPDATE IS STILL IN PROGRESS, THE SYSTEM BOARD MAY
+  HAVE TO BE REPLACED.
+
+
+Manual Update Using fwupdmgr
+
+  1. Make sure the AC adapter is firmly connected to the target computer.
+  2. Launch Terminal.
+  3. Move to the directory where the cabinet file was placed.
+  4. Run fwupdmgr to schedule firmware update.
+
+        # fwupdmgr install xxx.cab
+
+  5. Restart the system.
+     You may be able to use "reboot" command.
+     If it is not available, select "Reboot" from Power icon on the desktop.
+  6. The computer will be restarted and the EFI BIOS will be updated.
+
+
+Manual Update Using fwupdate
+
+  Superuser privilege is required during the instruction.
+
+  1. Make sure the AC adapter is firmly connected to the target computer.
+  2. Launch Files application on GNOME desktop.
+  3. Locate the directory where the cabinet file was placed.
+  4. Right-click the cabinet file, select Extract Here.
+  5. Launch Terminal.
+  6. Move to the directory where the contents of the cabinet file was extracted.
+  7. Check GUID of System Firmware
+
+        # su
+        # fwupdate -l
+
+     "fwupdate -l" lists GUIDs as follows.
+     Check a GUID which is marked as System Firmware type.
+
+        System Firmware Type, {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx} version XXX can be updated to any version above XXX
+        Device Firmware Type, {yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy} version YYY can be updated to any version above YYY
+        Device Firmware Type, {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz} version ZZZ can be updated to any version above ZZZ
+
+  8. Run fwupdate with the GUID obtained in the Step.7.
+     If fwupdate succeeds to schedule firmware update, it finishes silently without any message.
+
+        # su
+        # fwupdate -a xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx firmware.bin
+
+  9. Restart the system.
+     You may be able to use "reboot" command.
+     If it is not available, select "Reboot" from Power icon on the desktop.
+ 10. The computer will be restarted and the EFI BIOS will be updated.
+ 11. Finally delete the files extracted in the Step.4.
+
+
+--------------------------------------------------------------------------------
+INITIALIZING UEFI BIOS
+
+  UEFI BIOS Initialization is suggested for some problems. To initialize the
+  UEFI BIOS settings:
+
+  1. Turn on the computer.
+  2. While the "To interrupt normal startup, press Enter" message is displayed
+     at the lower-left area or lower-center area of the screen, press the F1 key.
+     The ThinkPad Setup menu will be displayed. If a password prompt appears,
+     type the correct password.
+  3. Press the F9 key to load default configuration.
+  4. Select Yes.
+  5. Press the F10 key to save default configuration and exit.
+  6. Select Yes.
+  7. Restart the computer.
+
+  Note:
+  After initialization you may need to reapply some settings that you had
+  changed previously.
+
+
+--------------------------------------------------------------------------------
+VERSION INFORMATION
+
+  The following versions of UEFI BIOS and ECP (Embedded Controller Program) have
+  been released to date.
+
+  Package (ID)	       UEFI BIOS (BIOS ID)	ECP (ECP ID)            Rev.   Issue Date
+  ----------------     --------------------  	----------------    	----   ----------
+  R12UL62W             1.32   (R12ET62W)        1.32  (R12HT62W)        01     2023/02/17
+  1.31   (R12UL61W)    1.31   (R12ET61W)        1.31  (R12HT61W)        01     2022/09/01
+
+
+  Note: Revision number (Rev.) is for administrative purpose of this README
+        document and is not related to software version. There is no need to
+        upgrade this software when the revision number changes.
+
+  To check the version of UEFI BIOS and Embedded Controller Program, refer to
+  the Determining which version is installed section.
+
+Summary of Changes
+
+  Where: <   >        Package version
+         UEFI:        UEFI BIOS version
+         ECP:         Embedded Controller Program version
+         [Important]  Important update
+         (New)        New function or enhancement
+         (Fix)        Correction to existing function
+
+<R12UJ62W>
+UEFI: 1.32 / ECP: 1.32
+- [Important] Regular update.
+
+<1.31>
+- [Important] Security issue fix: Security ID 004-027, LEN-66615.
+- [Important] Security issue fix: Security ID 007-015, LEN-66614.
+- (Fix) Fixed issue: Secure Boot PK setting by UEFI Shell causes reboot.
+
+
+
+--------------------------------------------------------------------------------
+LIMITATIONS
+
+  Nothing.
+
+
+--------------------------------------------------------------------------------
+
+TRADEMARKS
+
+* Lenovo are registered trademarks of Lenovo.
+* Rescue and Recovery is a trademark of Lenovo.
+
+* Intel is a registered trademark of Intel Corporation.
+* Microsoft, BitLocker, Windows are registered trademarks of
+  Microsoft Corporation.
+
+Other company, product, and service names may be registered trademarks,
+trademarks or service marks of others.
