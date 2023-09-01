@@ -49,6 +49,8 @@
 
 ## BIOS Updates
 
+Note: The Debian/RHEL/SUSE/Ubuntu one would not run properly under Mint 21.2 x64.
+
 * 1.32 - BIOS Update Utility (Windows 10/11 64 bit) - [r12uj62w.exe](BIOS/r12uj62w.exe)
 * 1.32 - ReadMe for BIOS Update Utility (Windows 10/11 64 bit) - [r12uj62w.txt](BIOS/r12uj62w.txt)
 * 1.32 - BIOS Update (Bootable CD) - [r12uj62wd.iso](BIOS/r12uj62wd.iso)
