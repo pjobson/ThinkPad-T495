@@ -57,9 +57,14 @@
 
 ## Manuals
 
-* [User's Guide v2 (english)](pdf/T495.UsersGuide_v2.en.pdf)
-* [Product Specification Reference (english)](pdf/T495.ProductSpecificationReference.en.pdf)
-* [Hardware Maintenance Manual (english)](pdf/T495.HardwareMaintenanceManual.en.pdf)
+* [User's Guide v2 (PDF)](pdf/T495.UsersGuide_v2.en.pdf)
+* [Product Specification Reference (PDF)](pdf/T495.ProductSpecificationReference.en.pdf)
+* [Hardware Maintenance Manual (PDF)](pdf/T495.HardwareMaintenanceManual.en.pdf)
+
+## Articles
+
+* [Enable Fingerprint Reader Ubuntu Variants](https://gist.github.com/pjobson/705d3c24a7712dede6860337791068dd)
+* [AMDGPU Firmware Linux](https://gist.github.com/pjobson/90380853d37fb28345d38592c1f7a5eb)
 
 ## References
 
