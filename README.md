@@ -75,6 +75,14 @@
 * 1.32 - BIOS Update Utility (Debian/RHEL/SUSE/Ubuntu) - [r12ul62w.zip](BIOS/r12ul62w.zip)
 * 1.32 - README (Debian/RHEL/SUSE/Ubuntu) - [r12ul62w.txt](BIOS/r12ul62w.txt)
 
+## Images
+
+* [Motherboard Bottom](img/motherboard.bottom.jpg)
+* [Motherboard Top](img/motherboard.top.jpg)
+* [Samsung 32GB DDR4 PC4-21300, 2666MHZ, M471A4G43MB1-CTD](img/recommended.ram.jpg)
+* [Western Digital WD 128GB SSD  SDAPTUW-128G B+M Key](img/wd.bmkey.ssd.jpg)
+* 
+
 ## References
 
 * [Lenovo T495](https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadt/t495/22tp2ttt495)
