@@ -41,22 +41,26 @@
 * [User's Guide v2 (PDF)](pdf/T495.UsersGuide_v2.en.pdf)
 * [Product Specification Reference (PDF)](pdf/T495.ProductSpecificationReference.en.pdf)
 * [Hardware Maintenance Manual (PDF)](pdf/T495.HardwareMaintenanceManual.en.pdf)
+* [Datasheet](pdf/T495.Datasheet.2.en.pdf)
+* [Partner Datasheet](pdf/T495.Datasheet.1.en.pdf)
+* [Datasheet Submodel 20NJ0000US](pdf/T495.Datasheet.20NJ0000US.en.pdf)
+* [EU Declaratoin of Conformity](pdf/T495.EU_Declaration_of_Conformity.en.pdf)
 
 ## Articles
 
 * [Enable Fingerprint Reader Ubuntu Variants](https://gist.github.com/pjobson/705d3c24a7712dede6860337791068dd)
 * [AMDGPU Firmware Linux](https://gist.github.com/pjobson/90380853d37fb28345d38592c1f7a5eb)
 
-## BIOS Updates
+## 1.32 BIOS Updates
 
 Note: The Debian/RHEL/SUSE/Ubuntu one would not run properly under Mint 21.2 x64.
 
-* 1.32 - BIOS Update Utility (Windows 10/11 64 bit) - [r12uj62w.exe](BIOS/r12uj62w.exe)
-* 1.32 - ReadMe for BIOS Update Utility (Windows 10/11 64 bit) - [r12uj62w.txt](BIOS/r12uj62w.txt)
-* 1.32 - BIOS Update (Bootable CD) - [r12uj62wd.iso](BIOS/r12uj62wd.iso)
-* 1.32 - ReadMe for BIOS Update (Bootable CD) - [r12uj62wd.txt](BIOS/r12uj62wd.txt)
-* 1.32 - BIOS Update Utility (Debian/RHEL/SUSE/Ubuntu) - [r12ul62w.zip](BIOS/r12ul62w.zip)
-* 1.32 - README (Debian/RHEL/SUSE/Ubuntu) - [r12ul62w.txt](BIOS/r12ul62w.txt)
+* BIOS Update Utility (Windows 10/11 64 bit) - [r12uj62w.exe](BIOS/r12uj62w.exe)
+* ReadMe for BIOS Update Utility (Windows 10/11 64 bit) - [r12uj62w.txt](BIOS/r12uj62w.txt)
+* BIOS Update (Bootable CD) - [r12uj62wd.iso](BIOS/r12uj62wd.iso)
+* ReadMe for BIOS Update (Bootable CD) - [r12uj62wd.txt](BIOS/r12uj62wd.txt)
+* BIOS Update Utility (Debian/RHEL/SUSE/Ubuntu) - [r12ul62w.zip](BIOS/r12ul62w.zip)
+* README (Debian/RHEL/SUSE/Ubuntu) - [r12ul62w.txt](BIOS/r12ul62w.txt)
 
 ## Images
 
