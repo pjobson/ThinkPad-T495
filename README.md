@@ -28,32 +28,13 @@
 
 ## Docking Stations
 
-* [ThinkPad Basic Docking Station](https://support.lenovo.com/us/en/solutions/pd500172-thinkpad-basic-docking-station-overview-and-service-parts)
-    * 2x USB 3.1 gen1 (5Gbps)
-    * 2x USB 2.0 with 1 always-on USB charging
-    * 1x 10/1000 Gigabit Ethernet
-    * 1x DisplayPort 1.4
-    * 1x VGA
-    * 1x Stereo/Mic Combo Audio Port
-    * 1x Kensington Lock Slot
-* [ThinkPad Pro Docking Station](https://support.lenovo.com/us/en/solutions/pd500174-thinkpad-pro-docking-station-overview-and-service-parts)
-    * 3x USB 3.1 gen1 (5Gbps)
-    * 2x USB 2.0 with 1 always-on USB charging
-    * 1x USB-C port (5Gbps, 5V 3A power)
-    * 1x 10/1000 Gigabit Ethernet
-    * 2x DisplayPort 1.4
-    * 1x Stereo/Mic Combo Audio Port
-    * 1x Kensington Lock Slot
-* [ThinkPad Ultra Docking Station](https://support.lenovo.com/us/en/solutions/pd500173-thinkpad-ultra-docking-station-overview-and-service-parts)
-    * 4x USB 3.1 gen2 (10Gbps) with 1* always-on USB charging
-    * 2x USB-C ports (10Gbps, 5V 3A power)
-    * 1x 10/1000 Gigabit Ethernet
-    * 2x DisplayPort 1.4
-    * 1x HDMI 2.0
-    * 1x VGA
-    * 1x Stereo/Mic Combo Audio Port
-    * 1x DC-IN
-    * 1x Kensington Lock Slot
+
+| Station                                | USB 3.1       | USB 2.0 | USB-C    | Gigabit Ethernet | DP 1.4 | HDMI 2.0 | VGA | Stereo/Mic Audio | Lock Slot |
+| -------------------------------------- |:-------------:|:-------:|:--------:|:----------------:|:------:|:--------:|:---:|:----------------:|:---------:|
+| [Basic](https://1tn.org/lenovobasic)   | 2 gen1 5Gbps  | 2       | 0        | 1                | 1      | 0        | 1   | 1                | 1         |
+| [Pro](https://1tn.org/lenovopro)       | 3 gen1 5Gbps  | 2       | 2 5Gbps  | 1                | 2      | 0        | 0   | 1                | 1         |
+| [Ultra](https://1tn.org/lenovoultra)   | 4 gen2 10Gbps | 0       | 2 10Gbps | 1                | 2      | 1        | 1   | 1                | 1         |
+
 
 ## Manuals
 
@@ -81,7 +62,7 @@
 * [Motherboard Top](img/motherboard.top.jpg)
 * [Samsung 32GB DDR4 PC4-21300, 2666MHZ, M471A4G43MB1-CTD](img/recommended.ram.jpg)
 * [Western Digital WD 128GB SSD  SDAPTUW-128G B+M Key](img/wd.bmkey.ssd.jpg)
-* 
+* [Intel Wireless-AC 9260](img/intel.ac9260.jpg)
 
 ## References
 
