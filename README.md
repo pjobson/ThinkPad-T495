@@ -49,6 +49,7 @@
 ## Articles
 
 * [Enable Fingerprint Reader Ubuntu Variants](https://gist.github.com/pjobson/705d3c24a7712dede6860337791068dd)
+* [Dual Boot ThinkPad T495 w/ rEFInd](https://gist.github.com/pjobson/33c4eb250c2542c84dbfde79d6a8b31c)
 * [AMDGPU Firmware Linux](https://gist.github.com/pjobson/90380853d37fb28345d38592c1f7a5eb)
 
 ## 1.32 BIOS Updates
