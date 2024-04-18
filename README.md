@@ -11,7 +11,7 @@
 * **Card Reader:** MicroSD
 * **Audio:** Realtek ALC257
 * **Ethernet:** Realtek RTL8111EPV
-* **Wireless:** Intel Wireless-AC 9260, 802.11ac Dual Band 2x2 Wi-Fi + Bluetooth 5.1, M.2 card
+* **Wireless:** Intel Wireless-AC 9260, 802.11ac Dual Band 2x2 Wi-Fi + Bluetooth 5.1, M.2 A+E-Key
 * **WWAN/Mobile:** M.2 B+M-Key
     * Can be replaced with a B+M Key SSD, such as: Western Digital p/n SDAPTUW-128G
 
